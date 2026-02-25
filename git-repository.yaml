@@ -1,0 +1,11 @@
+kind: GitRepository
+apiVersion: source.toolkit.fluxcd.io/v1
+metadata:
+  name: metabase
+  namespace: metabase
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  timeout: 60s
+  url: https://github.com/andrebassi/flux-cd-sample
