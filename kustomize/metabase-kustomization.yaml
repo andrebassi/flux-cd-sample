@@ -5,10 +5,10 @@ metadata:
   name: metabase
   namespace: flux-system
 spec:
-  interval: 30m0s
+  interval: 30s
   path: ./kustomize
   prune: true
-  retryInterval: 2m0s
+  retryInterval: 30s
   sourceRef:
     kind: GitRepository
     name: metabase
